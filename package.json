@@ -1,0 +1,23 @@
+{
+  "name": "metadown",
+  "version": "0.0.1",
+  "description": "Simple package that helps parse metadata from markdown files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivermulari/metadown.git"
+  },
+  "keywords": [
+    "markdown",
+    "metadata"
+  ],
+  "author": "Oliver Mulari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olivermulari/metadown/issues"
+  },
+  "homepage": "https://github.com/olivermulari/metadown#readme"
+}
