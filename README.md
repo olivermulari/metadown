@@ -8,7 +8,7 @@ Currenlty supports only node.js environments since it uses filesystem.
 Install with [npm](https://www.npmjs.com/)
 
 ```sh
-npm install classnames --save
+npm install metadown --save
 ```
 
 # Example usage
