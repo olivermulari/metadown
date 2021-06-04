@@ -70,7 +70,7 @@ function parseMarkdown(givenText, filename) {
 /**
  * Takes in a path to markdown file and returns a parsed json object
  */
-export default function metadown(path) {
+function metadown(path) {
   const filename = path.split("/")[path.split("/").length - 1]
   return new Promise((res, rej) => {
     fs.readFile(path, (err, data) => {
@@ -79,3 +79,5 @@ export default function metadown(path) {
     })
   })
 }
+
+module.exports = metadown
