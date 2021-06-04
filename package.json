@@ -1,6 +1,6 @@
 {
   "name": "metadown",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple package that helps parse metadata from markdown files",
   "main": "index.js",
   "types": "index.d.ts",
