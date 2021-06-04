@@ -5,6 +5,12 @@ Metadown
 A simple package that helps parse metadata from markdown files.
 Currenlty supports only node.js environments since it uses filesystem.
 
+Install with [npm](https://www.npmjs.com/)
+
+```sh
+npm install classnames --save
+```
+
 # Example usage
 
 ./path-to/markdown.md
