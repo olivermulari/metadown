@@ -26,6 +26,17 @@ Javascript:
 import metadown from "metadown";
 
 const parsed = await metadown("./path-to/markdown.md")
+
+// parsed:
+{
+  metadata: {
+    title: "Metadown",
+    description: "helps manage metadata in .md files",
+    date: "03.06.2021",
+  },
+  title: "This is a heading",
+  content: ...
+}
 ```
 
 This is the interface for the parsed object
