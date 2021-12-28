@@ -1,4 +1,5 @@
 const fs = require("fs")
+const path = require("path")
 
 function isString(text) {
   if (text.includes('["') || text.includes('"')) return true;
@@ -60,7 +61,7 @@ function parseMarkdown(givenText, filename) {
       content: removeFirstEmptyRows(content),
       metadata: {
         ...metaToJson(meta),
-        name: filename.replace(".md", "")
+        name: filename.split(".")[0]
       } 
     }
   }
@@ -68,12 +69,12 @@ function parseMarkdown(givenText, filename) {
 }
 
 /**
- * Takes in a path to markdown file and returns a parsed json object
+ * Takes in a pathName to markdown file and returns a parsed json object
  */
-function metadown(path) {
-  const filename = path.split("/")[path.split("/").length - 1]
+function metadown(pathName) {
+  const filename = path.parse(pathName).base
   return new Promise((res, rej) => {
-    fs.readFile(path, (err, data) => {
+    fs.readFile(pathName, (err, data) => {
       if (err) rej(err)
       res(parseMarkdown(data.toString(), filename))
     })
